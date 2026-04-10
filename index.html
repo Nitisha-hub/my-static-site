@@ -1,9 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <title>AWS Live Website 🚀</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #1e3c72, #2a5298);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 80px 20px;
+    }
+
+    h1 {
+      font-size: 50px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff9800;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e68900;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 50px 20px;
+      background: white;
+      color: black;
+    }
+
+    .card {
+      display: inline-block;
+      width: 250px;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      padding: 20px;
+      background: #111;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Hello from AWS 🚀</h1>
+
+<header>
+  <h1>🚀 My AWS Live Website</h1>
+  <p>Deployed using GitHub + CodePipeline + S3</p>
+  <button class="btn" onclick="showMessage()">Click Me</button>
+</header>
+
+<section>
+  <h2>✨ Features</h2>
+
+  <div class="card">
+    <h3>⚡ Fast</h3>
+    <p>Hosted on AWS S3 for high speed</p>
+  </div>
+
+  <div class="card">
+    <h3>🔄 Auto Deploy</h3>
+    <p>CI/CD using CodePipeline</p>
+  </div>
+
+  <div class="card">
+    <h3>🌍 Live</h3>
+    <p>Accessible from anywhere</p>
+  </div>
+</section>
+
+<footer>
+  <p>Made with ❤️ by Nitisha</p>
+</footer>
+
+<script>
+  function showMessage() {
+    alert("🎉 Your AWS website is working perfectly!");
+  }
+</script>
+
 </body>
 </html>
